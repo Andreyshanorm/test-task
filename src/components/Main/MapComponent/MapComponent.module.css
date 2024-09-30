@@ -1,0 +1,38 @@
+.map{
+    width: 100%;
+    height: 540px;
+}
+
+.mapContainer{
+    position: relative;
+}
+
+.buttons_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+}
+
+.map_btn{
+    border: none;
+    width: 100px;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.primary_map_btn{
+    border: none;
+    width: 100px;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #FFDF31;
+    font-family: inherit;
+    cursor: pointer;
+}

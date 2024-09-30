@@ -1,19 +1,30 @@
-import React from 'react'
-import styles from './Header.module.css';
-import { Logo } from './Logo/Logo';
+import React from "react";
+import styles from "./Header.module.css";
+import { ContentContainer } from "../ContentContainer/ContentContainer";
+import logo from '../../images/fullIcon.png'
+import {useNavigate} from "react-router-dom";
 
 
 export const Header = () => {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/form');
+  };
+
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <Logo/>
-        <span className={styles.logo_text}>гросс маркет</span>
-      </div>
-      <div className={styles.contact_container}>
-        <span className={styles.phone_number}>+7 (926) 433-14-16</span>
-        <button className={styles.survey_button}>заполнить анкету</button>
-      </div>
-    </header>
-  )
-}
+    <ContentContainer>
+      <header className={styles.header}>
+        <div onClick={() => navigate('/')} className={styles.logo}>
+          <img src={logo} alt="Логотип" />
+          <span className={styles.logo_text}>гросс маркет</span>
+        </div>
+        <div className={styles.contact_container}>
+          <span className={styles.phone_number}>+7 (926) 433-14-16</span>
+          <button onClick={handleButtonClick} className={styles.survey_button}>Заполнить анкету</button>
+        </div>
+      </header>
+    </ContentContainer>
+  );
+};

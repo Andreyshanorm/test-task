@@ -3,11 +3,11 @@ import "./Personal.css";
 import { personalData } from "./personalData";
 import rightIcon from '../../../icons/left-active.svg'
 import leftIcon from '../../../icons/right-inActive.svg'
-
+import { ContentContainer } from "../../ContentContainer/ContentContainer";
 
 export const Personal = () => {
   return (
-    <>
+    <ContentContainer>
       <div className="personal_header">
         <h2 className="personal_tittle">Вакансии в гросс маркете</h2>
         <div className="buttons_block">
@@ -30,6 +30,6 @@ export const Personal = () => {
           </div>
         ))}
       </div>
-    </>
+    </ContentContainer>
   );
 };

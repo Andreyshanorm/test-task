@@ -1,28 +1,17 @@
-
-import './App.css';
-import { Header } from './components/Header/Header';
-import { Tittle } from './components/Main/Tittle/Tittle';
-import { BackgroundContainer } from './components/BackgroundContainer/BackgroundContainer'
-import { ContentContainer } from './components/ContentContainer/ContentContainer';
-import { Personal } from './components/Main/Personal/Personal';
-import { InstagramComponent } from './components/Main/InstagramComponent/InstagramComponent';
-
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { FormPage } from "./pages/FormPage/FormPage";
 
 function App() {
   return (
-    <div className='app'>
-      <ContentContainer>
-        <Header/>
-      </ContentContainer>
-      <BackgroundContainer>
-        <Tittle/>
-      </BackgroundContainer>
-      <ContentContainer>
-        <Personal/>
-      </ContentContainer>
-      <ContentContainer>
-        <InstagramComponent/>
-      </ContentContainer>
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/form" element={<FormPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

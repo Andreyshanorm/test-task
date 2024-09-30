@@ -8,7 +8,7 @@
   }
   
   .text_section {
-    max-width: 300px;
+    width: 400px;
     font-size: 72px;
     color: #000;
   }
@@ -53,4 +53,24 @@
   .name {
     bottom: 20%;
     left: 20%;
+  }
+
+  @media (max-width: 767px) {
+    .talent_image_container{
+      position: relative;
+      right: -40px;
+    }
+    .image_section {
+      width: 60%;
+    }
+
+    .baker {
+      top: 25%;
+      right: 10%;
+    }
+    
+    .name {
+      bottom: 25%;
+      left: 22%;
+    }
   }
