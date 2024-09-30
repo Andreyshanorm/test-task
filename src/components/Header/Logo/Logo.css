@@ -1,0 +1,31 @@
+
+
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 21px;
+    border-radius: 50%;
+    
+}
+
+.circle1 {
+    z-index: 200;
+    top: -5px;
+    left: 10px;
+    background: radial-gradient(68.48% 67.11% at 11.84% 32.89%, #FF5555 0%, #FFDE31 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+}
+
+.circle2 {
+    z-index: 100;
+    top: 3px;
+    left: 10px;
+    background: radial-gradient(68.48% 67.11% at 11.84% 32.89%, #FF5555 0%, #FFDE31 100%)
+}
+
+.circle3 {
+    z-index: 10;
+    top: 11px;
+    left: 10px;
+    background: radial-gradient(68.48% 67.11% at 11.84% 32.89%, #FF5555 0%, #FFDE31 100%)
+}
