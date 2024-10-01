@@ -16,7 +16,7 @@ export const HomePage = () => {
 
   return (
     <>
-    <button onClick={() => navigate('/form')} className='survey_button'>Заполнить анкету</button>
+    <button onClick={() => navigate('/test-task/form')} className='survey_button'>Заполнить анкету</button>
     <Header/>
       <BackgroundContainer>
         <Tittle/>

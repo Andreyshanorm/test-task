@@ -10,13 +10,13 @@ export const Header = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate('/form');
+    navigate('/test-task/form');
   };
 
   return (
     <ContentContainer>
       <header className={styles.header}>
-        <div onClick={() => navigate('/')} className={styles.logo}>
+        <div onClick={() => navigate('/test-task')} className={styles.logo}>
           <img src={logo} alt="Логотип" />
           <span className={styles.logo_text}>гросс маркет</span>
         </div>
