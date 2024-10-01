@@ -5,28 +5,22 @@
     overflow-y: hidden;
     -ms-overflow-style: none;
       scrollbar-width: none;
+      scroll-behavior: smooth;
+      margin-top: 32px;
 }
 
 .personal_tittle{
     font-size: 32px;
+    
 }
 
-.card {
-    width: 350px;
-    height: 482px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .personal_header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 72px;
 }
 
 .buttons_block{

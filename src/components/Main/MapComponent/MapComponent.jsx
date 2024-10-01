@@ -43,7 +43,7 @@ export const MapComponent = () => {
 
   return (
     <ContentContainer>
-      <h2>География</h2>
+      <h2 className={styles.map_tittle}>География</h2>
       <div className={styles.mapContainer}>
         <YMaps>
           <Map

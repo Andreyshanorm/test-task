@@ -49,9 +49,34 @@
   background-color: #e6c200;
 }
 
+.mobile_icon{
+  display: none;
+}
+
+
 @media (max-width: 767px) {
   .header {
     padding-left: 39px;
     padding-right: 39px;
   }
+}
+
+@media (max-width: 374px) {
+
+  .contact_container {
+    display: none;
+  }
+  .mobile_icon {
+    display: block;
+  }
+
+  .header {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .logo_text {
+    padding-left: 20px;
+  }
+  
 }

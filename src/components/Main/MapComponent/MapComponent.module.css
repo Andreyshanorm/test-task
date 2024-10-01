@@ -4,7 +4,13 @@
 }
 
 .mapContainer{
+    margin-top: 32px;
     position: relative;
+}
+
+.map_tittle{
+    margin-top: 69px;
+    font-size: 32px;
 }
 
 .buttons_block{

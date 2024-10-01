@@ -4,6 +4,11 @@
   gap: 125px;
 }
 
+h2{
+  font-size: 72px;
+  margin: 0;
+}
+
 p {
   font-size: 14px;
 }
@@ -12,8 +17,15 @@ label {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 27px;
+  margin-top: 12px;
+  position: relative;
 }
+
+label div{
+  position: absolute;
+  bottom: -16px;
+}
+
 
 input,
 select,
@@ -25,6 +37,11 @@ textarea {
   border-radius: 8px;
   padding-left: 8px;
 }
+
+input:focus{
+  outline: none;
+}
+
 
 input[type="text"],
 input[type="date"],
@@ -48,6 +65,7 @@ input[type="email"] {
 
 .gender_options {
   display: flex;
+  align-items: flex-start;
   gap: 20px;
 }
 
@@ -151,6 +169,15 @@ input[type="email"] {
   height: 0;
 }
 
+.captha input {
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+
+
 .checkmark {
   position: absolute;
   top: 7px;
@@ -164,6 +191,40 @@ input[type="email"] {
   justify-content: center;
 }
 
+.captha .checkmark{
+  position: static;
+  background-color: white;
+
+}
+
+.capthaContent{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 255px;
+  height: 47px;
+  padding-left: 16px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  gap: 8px;
+}
+
+.capthaBlock span{
+    color: #a5a5a5;
+}
+
+.captha input:checked + p .checkmark::before {
+  content: "✔";
+  font-size: 16px;
+  color: black;
+}
+
+.capthaBlock{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 .accept input:checked ~ .checkmark::before {
   content: "✔";
   font-size: 16px;
@@ -174,12 +235,16 @@ input[type="email"] {
     width: 100%;
     height: 47px;
     font-family: inherit;
+    background: rgba(255, 223, 49, 1);
     font-size: 18px;
     border: none;
     border-radius: 8px;
     margin-top: 24px;
     cursor: pointer;
+}
 
+.submit_btn[disabled]{
+   background: rgba(245, 245, 245, 1);
 }
 
 .info_tittle{
@@ -202,4 +267,106 @@ input[type="email"] {
     justify-content: center;
     border-radius: 8px;
     font-size: 24px;
+}
+
+
+.captchaLogo{
+  position: absolute;
+  right: 11px;
+}
+
+@media (max-width: 767px) {
+  .form_container {
+    grid-template-columns: 1fr;
+  }
+
+  input, select, textarea, .submit_btn, .file{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .submit_btn{
+    margin-left: 40px;
+  }
+
+  .accept{
+    width: 90%;
+    margin-left: 40px;
+  }
+
+  .captha{
+    margin-left: 40px;
+  }
+
+
+  .about{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about input{
+    width: 100%;
+    column-gap: 15px;
+  }
+
+  .margin_mobile{
+    margin-left: 40px;
+  }
+
+  .info_section{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 374px) {
+  .about{
+    grid-template-columns: 1fr;
+  }
+
+  input, select, textarea, .submit_btn, .file{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .margin_mobile{
+    font-size: 48px;
+  }
+
+
+  .about input{
+    width: 100%;
+  }
+
+  .about label p{
+    margin-left: 18px;
+  }
+
+  .capthaBlock{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    gap: 10px;
+  }
+
+  .capthaContent{
+    width: 100%;
+  }
+
+  .accept{
+    width: 89%;
+    margin: 0 auto;
+  }
+
+  .accept p{
+    padding-left: 26px;
+  }
+
+  .submit_btn{
+    margin-left: 20px;
+  }
+
+  .checkmark{
+    top: 14px;
+  }
 }
