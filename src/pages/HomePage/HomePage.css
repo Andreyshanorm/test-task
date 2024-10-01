@@ -1,0 +1,22 @@
+.survey_button{
+    display: none;
+}
+
+@media (max-width: 374px) {
+    .survey_button{
+        display: block;
+      background-color: #FFD700;
+      width: 90%;
+      margin: 0 auto;
+      color: #000;
+      border: none;
+      font-family: inherit;
+      padding: 10px;
+      font-size: 1rem;
+      position: sticky;
+      top: 18px;
+      border-radius: 5px;
+      z-index: 1000; 
+    }
+
+  }

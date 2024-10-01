@@ -51,12 +51,18 @@
        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 12px;
     }
 
     .item{
         width: 210px;
         height: 210px;
     }
+
+    .gallery div{
+        width: 330px;
+        height: 330px;
+     }
 
     .item:nth-child(2) {
         grid-column: span 3;
@@ -75,13 +81,10 @@
 
 @media (max-width: 767px){
     .gallery{
-        gap: 12px;
+        
     }
     
-    .gallery div{
-       width: 330px;
-       height: 330px;
-    }
+    
 
     
 

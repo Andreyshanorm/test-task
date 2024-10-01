@@ -19,7 +19,6 @@ const initialPoints = [
 
 export const MapComponent = () => {
   const [points, setPoints] = useState(initialPoints);
-  const [mapState, changeMapState] = useState(10);
 
   const removePoints = (pointType) => {
     if (pointType === "legal") {

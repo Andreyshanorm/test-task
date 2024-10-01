@@ -18,7 +18,6 @@ export const PersonalCard = ({ jobName, img, desc, id, isHoverable }) => {
 
   return (
     <div
-      key={id}
       className={`card ${isHovered ? 'hoverable' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

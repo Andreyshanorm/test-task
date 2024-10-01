@@ -3,7 +3,6 @@ import styles from "./Footer.module.css";
 import logo from "../../images/fullIcon.png";
 import facebookLogo from "../../icons/Vectorfacebook.svg";
 import vkLogo from "../../icons/iconmonstr-vk-4-1vk.svg";
-import { ContentContainer } from "../ContentContainer/ContentContainer";
 
 export const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,10 +35,13 @@ export const Footer = () => {
       {isModalOpen && (
         <div className={styles.modal}>
           <div className={styles.modal_content}>
-            <button onClick={toggleModal} className={styles.close_button}>
-              ×
-            </button>
-            <h3 className={styles.modal_head}>Обработка данных</h3>
+            <div className={styles.modal_header}>
+              <button onClick={toggleModal} className={styles.close_button}>
+                ×
+              </button>
+              <h3 className={styles.modal_head}>Обработка данных</h3>
+            </div>
+
             <h4 className={styles.modal_subTittle}>
               1. Что регулирует настоящая политика конфиденциальности
             </h4>
@@ -59,19 +61,19 @@ export const Footer = () => {
               передача Персональной информации возможна только в случаях,
               установленных применимым законодательством, и осуществляется на
               основании специальных договоров между Гросс маркет и каждым из
-              Партнеров. 
-                <p className={styles.opacity}>
-                Пожалуйста, обратите внимание, что использование любого
-              из Сайтов и/или Сервисов может регулироваться дополнительными
-              условиями, которые могут вносить в настоящую Политику изменения
-              и/или дополнения, и/или иметь специальные условия в отношении
-              персональной информации, размещенные в соответствующих разделах
-              документов для таких Сайтов /или Сервисов.
-                </p>
-
-
+              Партнеров.
+              <p className={styles.opacity}>
+                Пожалуйста, обратите внимание, что использование любого из
+                Сайтов и/или Сервисов может регулироваться дополнительными
+                условиями, которые могут вносить в настоящую Политику изменения
+                и/или дополнения, и/или иметь специальные условия в отношении
+                персональной информации, размещенные в соответствующих разделах
+                документов для таких Сайтов /или Сервисов.
+              </p>
             </p>
-            <h4 className={styles.modal_subTittle}>2. Кто обрабатывает информацию</h4>
+            <h4 className={styles.modal_subTittle}>
+              2. Кто обрабатывает информацию
+            </h4>
             <p className={styles.modal_text}>
               Для обеспечения использования Вами Сайтов и Сервисов Ваша
               Персональная информация собирается и используется Яндексом, в том
@@ -84,7 +86,9 @@ export const Footer = () => {
               тот или иной Сервис, Вы можете ознакомиться в условиях
               использования соответствующего Сервиса.
             </p>
-            <h4 className={styles.modal_subTittle}>3. Какова цель данной Политики</h4>
+            <h4 className={styles.modal_subTittle}>
+              3. Какова цель данной Политики
+            </h4>
             <p className={styles.modal_text}>
               Защита Вашей Персональной информации и Вашей конфиденциальности
               чрезвычайно важны для Гросс маркета. Поэтому при использовании

@@ -98,22 +98,28 @@
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-bottom: 20px;
   }
   
   .close_button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: -15px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 36px;
     cursor: pointer;
   }
 
-.modal_head{
-    margin-top: 72px;
+.modal_header{
+    margin-top: 20px;
     font-size: 72px;
+    position: sticky;
+    top: -25px;
+    background-color: inherit;
 }
+
+
 
 .modal_subTittle{
     margin-top: 48px;
@@ -171,8 +177,11 @@
     display: none;
   }
 
+
   .modal_head{
-    margin-top: 32px;
+    font-size: 36px;
+    top: -25px;
+
 }
 
   .copy{
@@ -190,10 +199,5 @@
   gap: 24px;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.modal_head{
-  margin-top: 72px;
-  font-size: 48px;
 }
 }

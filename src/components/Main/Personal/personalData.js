@@ -1,6 +1,5 @@
 import Baker from "../../../images/personal/baker.png";
 import Cachier from "../../../images/personal/cachier.png";
-import Cass from "../../../images/personal/Cass.png";
 import Chief from "../../../images/personal/Chief.png";
 import Driver from "../../../images/personal/driver.png";
 import Expert from "../../../images/personal/expert.png";

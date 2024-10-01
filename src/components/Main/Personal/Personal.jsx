@@ -7,6 +7,7 @@ import rightIconActive from "../../../icons//right-Active.svg";
 import rigthIconInActive from "../../../icons/right-inActive.svg"
 import { ContentContainer } from "../../ContentContainer/ContentContainer";
 import { PersonalCard } from "./PersonalCard/PersonalCard";
+import {v4 as uuidv4} from 'uuid';
 
 export const Personal = () => {
   const scrollRef = useRef(null);
@@ -66,9 +67,10 @@ export const Personal = () => {
       </div>
 
       <div className="scroll-container" ref={scrollRef}>
-        {personalData.map((item, index) => (
+        {personalData.map((item) => (
           <PersonalCard
-            id={index}
+            key={uuidv4()}
+            id={uuidv4()}
             jobName={item.jobName}
             img={item.img}
             desc={item.desc}

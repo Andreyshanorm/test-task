@@ -38,6 +38,11 @@
 
 .element::-webkit-scrollbar { width: 0; }
 
-
+@media (max-width: 374px) {
+   
+    .buttons_block{
+        display: none;
+    }
+  }
 
 

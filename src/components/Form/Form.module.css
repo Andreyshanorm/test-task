@@ -2,11 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 125px;
+  min-height: 54vh;
 }
 
-h2{
+h1{
   font-size: 72px;
-  margin: 0;
+  margin-top: 72px;
 }
 
 p {
@@ -16,14 +17,19 @@ p {
 label {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 12px;
   margin-top: 12px;
   position: relative;
 }
 
-label div{
+label div#error{
   position: absolute;
   bottom: -16px;
+}
+
+label:has(.gender_options) {
+  margin-top: -10px;
 }
 
 
@@ -278,7 +284,10 @@ input[type="email"] {
 @media (max-width: 767px) {
   .form_container {
     grid-template-columns: 1fr;
+    gap: 72px;
   }
+
+
 
   input, select, textarea, .submit_btn, .file{
     width: 90%;
@@ -320,8 +329,16 @@ input[type="email"] {
 }
 
 @media (max-width: 374px) {
+
+  .form_container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+
   .about{
     grid-template-columns: 1fr;
+    gap: 48px;
   }
 
   input, select, textarea, .submit_btn, .file{
@@ -329,7 +346,7 @@ input[type="email"] {
     margin: 0 auto;
   }
 
-  .margin_mobile{
+  h1{
     font-size: 48px;
   }
 
@@ -338,9 +355,6 @@ input[type="email"] {
     width: 100%;
   }
 
-  .about label p{
-    margin-left: 18px;
-  }
 
   .capthaBlock{
     flex-wrap: wrap;
@@ -368,5 +382,9 @@ input[type="email"] {
 
   .checkmark{
     top: 14px;
+  }
+
+  .margin_mobile{
+    margin-left: 20px;
   }
 }

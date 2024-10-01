@@ -3,9 +3,7 @@ import valentinImage from "../../../images/Valentin.png";
 import kseniaImage from "../../../images/personal/shutterstock_16147704551Ksenia.png";
 import styles from "./Tittle.module.css";
 import leftIconActive from "../../../icons/left-active.svg";
-import leftIconInActive from "../../../icons/left-inActive.svg";
 import rightIconActive from "../../../icons//right-Active.svg";
-import rigthIconInActive from "../../../icons/right-inActive.svg"
 
 
 export const Tittle = () => {

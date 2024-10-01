@@ -64,7 +64,7 @@
 @media (max-width: 374px) {
 
   .contact_container {
-    display: none;
+      display: none;
   }
   .mobile_icon {
     display: block;
@@ -78,5 +78,18 @@
   .logo_text {
     padding-left: 20px;
   }
-  
+
+  .survey_button{
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    position: sticky;
+    bottom: 10px; 
+    left: 10px;
+    right: 10px;
+    border-radius: 5px;
+    z-index: 1000; 
+  }
 }

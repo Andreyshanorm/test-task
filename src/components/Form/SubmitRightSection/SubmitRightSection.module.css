@@ -1,0 +1,44 @@
+
+.content{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 18px;
+
+}
+
+.content p{
+    font-size: inherit;
+}
+
+.content p.caption{
+    position: relative;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+.line{
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 54px;
+    height: 3px;
+    background: #FFDF31;
+    transform: rotate(90deg);
+}
+
+@media (max-width: 767px) {
+    .right_section {
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+}
+
+@media (max-width: 374px) {
+    .right_section {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+}
