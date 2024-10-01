@@ -104,26 +104,22 @@
   .close_button {
     position: absolute;
     top: 0;
-    right: -15px;
+    right: 15px;
     background: none;
     border: none;
     font-size: 36px;
     cursor: pointer;
   }
 
-.modal_header{
-    margin-top: 20px;
-    font-size: 72px;
-    position: sticky;
-    top: -25px;
-    background-color: inherit;
-}
-
-
 
 .modal_subTittle{
     margin-top: 48px;
     font-size: 18px;
+}
+
+.modal_header h3{
+  font-size: 72px;
+  margin-top: 32px;
 }
 
 .modal_text{
@@ -143,6 +139,15 @@
   .copy{
     padding-left: 39px;
   }
+
+  .modal_header{
+    margin-top: 20px;
+    font-size: 72px;
+    position: sticky;
+    top: -25px;
+    background-color: inherit;
+}
+
 
   .footer_content {
     width: 90%;
@@ -193,6 +198,11 @@
     padding: 0;
     order: 1;
   }
+
+  .close_button {
+    right: -15px;
+  }
+
 
  .footer_bottom {
   padding-left: 16px;
