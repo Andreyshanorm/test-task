@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/test-task/static/css/main.b73a6093.css",
+    "main.js": "/test-task/static/js/main.9a5f3c59.js",
+    "static/media/Valentin.png": "/test-task/static/media/Valentin.4256d75262ecc6045229.png",
+    "static/media/shutterstock_16147704551Ksenia.png": "/test-task/static/media/shutterstock_16147704551Ksenia.1f79879b21e722432053.png",
+    "static/media/driver.png": "/test-task/static/media/driver.903d70117606845a4d48.png",
+    "static/media/Receptionist.png": "/test-task/static/media/Receptionist.9cd33bc225f69decb0ec.png",
+    "static/media/cachier.png": "/test-task/static/media/cachier.d627544510f934488f99.png",
+    "static/media/expert.png": "/test-task/static/media/expert.8a7bc9dc8657c32e1daa.png",
+    "static/media/baker.png": "/test-task/static/media/baker.e8628380eabfe260344e.png",
+    "static/media/Seller.png": "/test-task/static/media/Seller.285d9efcbd11dc3ce591.png",
+    "static/media/Chief.png": "/test-task/static/media/Chief.dc1cde599b8f9c18910b.png",
+    "static/media/EuclidCircularB-Medium.woff2": "/test-task/static/media/EuclidCircularB-Medium.3d208ed259f6be7deb77.woff2",
+    "static/media/iconmonstr-vk-4-1vk.svg": "/test-task/static/media/iconmonstr-vk-4-1vk.e3ea60e48ab328bd1995c5d544b9f463.svg",
+    "index.html": "/test-task/index.html",
+    "static/media/Vectorscrep.svg": "/test-task/static/media/Vectorscrep.d6bb261a6fbc83ca7a43289700482130.svg",
+    "static/media/VectorPhone.svg": "/test-task/static/media/VectorPhone.f9d1928357a43b1b4038b646f2673d04.svg",
+    "static/media/Vectorfacebook.svg": "/test-task/static/media/Vectorfacebook.5ae810591a74e85a127b6adfea284ba5.svg",
+    "static/media/right-inActive.svg": "/test-task/static/media/right-inActive.35a0865c9d803eaeed4e4c0302053d7e.svg",
+    "static/media/right-Active.svg": "/test-task/static/media/right-Active.1e457f8f391be97edfcb1e187de2d9f9.svg",
+    "static/media/left-inActive.svg": "/test-task/static/media/left-inActive.82c597371eb9b3d6d84fef33f96a04fb.svg",
+    "static/media/left-active.svg": "/test-task/static/media/left-active.501a15f82f3bbc3d11da64f204c2255e.svg",
+    "main.b73a6093.css.map": "/test-task/static/css/main.b73a6093.css.map",
+    "main.9a5f3c59.js.map": "/test-task/static/js/main.9a5f3c59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b73a6093.css",
+    "static/js/main.9a5f3c59.js"
+  ]
+}
