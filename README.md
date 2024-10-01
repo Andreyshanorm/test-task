@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Проект с реализацие тестого задания 
+
+Сайт доступен по ссылке - https://andreyshanorm.github.io/test-task
 
 ## Available Scripts
 
